@@ -28,6 +28,11 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+#configuring port to 8025
+from django.core.management.commands.runserver import Command as runserver 
+runserver.default_port = "8025"
+
+
 # Application definition
 
 INSTALLED_APPS = [
